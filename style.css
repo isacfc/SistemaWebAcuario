@@ -1,77 +1,88 @@
-.card {
-  width: 190px;
-  height: 254px;
-  background: #07182E;
-  position: relative;
-  display: flex;
-  place-content: center;
-  place-items: center;
-  overflow: hidden;
-  border-radius: 20px;
+
+.contenedor-parallax{
+  
+  position:relative;
+  height: 100vh;
+  width: 100vw;
+  overflow:hidden;
 }
 
-.card h2 {
+
+.bg-img{
+  position:absolute;
+  width:194.44%;
+  top: 1.86%;
+  left:50.69%;
+  transform:translate(-50%,-50%);
   z-index: 1;
-  color: white;
-  font-size: 2em;
 }
 
-.card::before {
-  content: '';
-  position: absolute;
-  width: 100px;
-  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
-  height: 130%;
-  animation: rotBGimg 3s linear infinite;
-  transition: all 0.2s linear;
+.coral-fondo{
+  position:absolute;
+  width:50%;
+  top: 73.8%;
+  left:55%;
+  transform:translate(-50%,-50%);
+  z-index: 2;
 }
 
-@keyframes rotBGimg {
-  from {
-    transform: rotate(0deg);
-  }
+.imagen-titulo{
 
-  to {
-    transform: rotate(360deg);
-  }
+  position:absolute;
+  width:50%;
+  top: calc(50%);
+  left:calc(50%);
+  transform:translate(-50%,-50%);
+  z-index: 3;
 
 }
 
-.card::after {
-  content: '';
-  position: absolute;
-  background: #07182E;
-  ;
-  inset: 5px;
-  border-radius: 15px;
-}  
+.algas{
 
-  
-  .card::before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
-    height: 130%;
-    animation: rotBGimg 3s linear infinite;
-    transition: all 0.2s linear;
-  }
-  
-  @keyframes rotBGimg {
-    from {
-      transform: rotate(0deg);
-    }
-  
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  
-  /* .card:hover:before {
-    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
-    animation: rotBGimg 3.5s linear infinite;
-  } */
+  position:absolute;
+  width:63.5%;
+  top: 83%;
+  left:70%;
+  transform:translate(-50%,-50%);
+  z-index: 4;
+
+}
+
+
+.piedra{
+
+  position:absolute;
+  width:30.5%;
+  top: 93.3%;
+  left:30%;
+  transform:translate(-50%,-50%);
+  z-index: 4;
+
+}
+
+.pez-payaso{
+
+  position:absolute;
+  width:11%;
+  top: 52.5%;
+  left:75.1%;
+  transform:translate(-50%,-50%);
+  z-index: 4;
+
+}
+
+.pez-cirujano{
+
+  position:absolute;
+  width:12%;
+  top: 48%;
+  left:24%;
+  transform:translate(-50%,-50%);
+  z-index: 4;
+
+}
+
+
    
 *{
   margin: 0;
@@ -285,3 +296,131 @@ header{
     width: 100%;
   }
 }
+.coral-derecho{
+
+  position:absolute;
+  width:42.5%;
+  top: 72%;
+  left:82%;
+  transform:translate(-50%,-50%);
+  z-index: 2;
+
+}
+
+.coral-izquierdo{
+
+  position:absolute;
+  width:40%;
+  top: 50%;
+  left:5%;
+  transform:translate(-50%,-50%);
+  z-index: 5;
+
+}
+
+.vinieta{
+  position:absolute;
+  z-index: 100;
+  width: 100%;
+  height:100%;
+  top:0;
+  left:0;
+  background: radial-gradient(ellipse at center,rgba(0,0,0,0) 65%, rgba(0,0,0,0.9));
+
+}
+
+.parallax{
+  pointer-events: none;
+  transition: 0.6s cubic-bezier(.11,.56,.49,1.04);
+
+}
+
+
+@media (max-width: 725px){
+
+
+  
+.bg-img{
+  
+  width:initial;
+  height:311.104%;
+  
+}
+
+.coral-fondo{
+  
+  width:initial;
+  height:50%;
+  
+}
+
+.imagen-titulo{
+
+  
+  width:initial;
+  height:15%;
+  
+
+}
+
+.algas{
+
+  
+  width:initial;
+  height:42.6%;
+  
+
+}
+
+
+.piedra{
+
+  width:initial;
+  height: 20.8%;
+}
+
+.pez-payaso{
+
+  width:initial;
+  height: 5.6%;
+  left:87%;
+  
+}
+
+.pez-cirujano{
+
+
+  width:initial;
+  height: 7.2%;
+  left:13%;
+  top:48%;
+
+
+}
+
+.coral-derecho{
+
+  width:initial;
+  height: 100%;
+  top:50%;
+}
+
+.coral-izquierdo{
+
+  width:initial;
+  height: 100%;
+  left:-20%;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
