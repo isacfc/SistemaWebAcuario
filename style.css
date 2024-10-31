@@ -106,6 +106,8 @@ header{
   justify-content: space-between;
   padding: 0 100px;
   z-index: 9999;
+  position: fixed;
+  top:0;
   
 }
 .logo{
@@ -462,12 +464,13 @@ header{
   display: flex;
   justify-content: center;
   justify-items: center;
-  margin:  50px 350px ;
+  margin:  100px 350px ;
+  
 }
 .wrapper{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  border: 2px solid black;
+ 
 
 
 }
@@ -475,7 +478,7 @@ header{
 .boxUNO{
   display: grid;
   grid-column: 1/3;
-  border: 2px solid black;
+ 
   padding: 25px;
   justify-content: center;
   justify-items: center;
@@ -485,9 +488,18 @@ header{
 }
 .boxDOS{
   grid-column: 1/3;
-  border: 2px solid black;
+ 
   padding: 50px;
   
+}
+
+.boxCheck{
+
+  padding: 20px;
+  grid-column: 1/3;
+  
+  
+
 }
 
 .box{
@@ -496,6 +508,8 @@ header{
   grid-column: 1/3;
   display: flex;
   flex-wrap: wrap;
+  margin: 5px;
+  
   
 
 }
@@ -547,15 +561,41 @@ input::placeholder, .textComentario::placeholder{
 
 #formulario button{
 
-  background-color: #007399;
-  color: #fff;
+  
   padding: 12px 24px;
   border:none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: 0.3s;
 
 }
+
+.btn-summit{
+  background-color: #007399;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.btn-cancel{
+  background-color: gray;
+  color: white;
+}
+
+.btn-summit:hover{
+
+  background-color:  #004a63;
+  
+
+}
+
+.btn-cancel:hover{
+  background-color: rgb(70, 70, 70);
+  color: white;
+}
+
+
+
+
 
 /*Creacion de la animación de burbujas*/
 
