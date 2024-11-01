@@ -447,6 +447,68 @@ header{
 
 }
 
+.descripcion{
+
+  padding: 2%;
+
+  margin: 15px auto;
+  
+
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  grid-auto-rows: minmax(100px, 450px);
+  gap: 30px;
+  line-height: 1.6;
+  background-image: linear-gradient(144deg,#083672 25%, #0A6AA6 ,#42C5EF 75%);
+  width: 90%;
+
+  border-radius: 2%;
+  box-shadow: 2px 30px 15px 20px rgb(0 0 0 / 20%);
+}
+
+.descripcion p{
+  color:white;
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.descripcion h1{
+  text-align: center;
+  color:white;
+  
+  font-size: 2.8rem;
+}
+
+.imagen{
+  
+  border-radius: 5px;
+}
+
+#img1{
+  border-radius: 50px;
+  
+  object-fit: cover;
+  object-position: center;
+ 
+}
+
+.celda{
+  padding: 10px;
+}
+
+#contenedor-medusas{
+  padding: 0px;
+  
+}
+
+
+
+
+
+
+
+
 
 
 
