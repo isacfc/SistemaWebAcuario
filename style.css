@@ -658,7 +658,60 @@ input::placeholder, .textComentario::placeholder{
 }
 
 
+/*Media querys para el formulario*/
+@media (max-width: 1024px) {
+  .containerPrincipal {
+      margin: 50px 50px;
+  }
 
+  #textField, .textComentario {
+      width: 80%;
+  }
+
+  .btn-submit, .btn-cancel {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+}
+
+/* Ajustes para pantallas de celulares (máximo 768px) */
+@media (max-width: 768px) {
+  .containerPrincipal {
+      margin: 20px 20px;
+  }
+
+  .wrapper {
+      grid-template-columns: 1fr; /* Todos los elementos en una columna */
+      gap: 20px; /* Espacio entre elementos */
+  }
+
+  .boxUNO, .boxDOS, .boxCheck, .box {
+      grid-column: 1 / -1;
+      padding: 20px;
+      text-align: center;
+  }
+
+  #textField, .textComentario {
+      width: 100%;
+  }
+
+  #formulario button {
+      width: 100%; /* Botones a ancho completo */
+      margin: 10px 0; /* Espacio vertical entre botones */
+  }
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas (máximo 480px) */
+@media (max-width: 480px) {
+  .btn-submit, .btn-cancel {
+      font-size: 12px; /* Tamaño de fuente más pequeño para botones */
+  }
+
+  .bubble {
+      width: 15px;
+      height: 15px;
+  }
+}
 
 
 
