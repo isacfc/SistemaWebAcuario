@@ -1,5 +1,6 @@
 body{
   background-color: #082640;
+  position: relative;
 }
 
 
@@ -114,9 +115,7 @@ body{
   box-sizing: border-box;
 }
 
-html{
-  font-size: 1vw;
-}
+
 
 ul{
   list-style: none;
@@ -167,6 +166,7 @@ header{
   transition: 0.2s;
   margin: 0 5px;
   z-index: 9999;
+  font-size: 1rem;
 }
 
 .nav-bar ul li a:hover{
@@ -456,20 +456,19 @@ header{
 
   display:grid;
   grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-  grid-auto-rows: minmax(100px, 450px);
-  gap: 30px;
+  gap:10px;
   line-height: 1.6;
   background-image: linear-gradient(144deg,#083672 25%, #0A6AA6 ,#42C5EF 75%);
   width: 90%;
 
-  border-radius: 2%;
+  border-radius: 15px;
   box-shadow: 2px 30px 15px 20px rgb(0 0 0 / 20%);
+  transition: 0.4s;
 }
 
 .descripcion p{
   color:white;
   text-align: justify;
-  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
@@ -477,21 +476,249 @@ header{
   text-align: center;
   color:white;
   
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
+
+.img-atraccion{
+  max-height: 500px;
+}
+
+.video-atraccion{
+  max-height: 600px;
+}
+
+.descripcion p{
+  font-size: 1.2rem;
+}
+
+.descripcion:hover{
+  transform: scale(101%);
+
+}
+
+
+.atracciones{
+
+  padding: 0%;
+
+  margin: 15px auto;
+  
+
+  display:grid;
+  grid-template-columns: repeat(auto-fit,1fr);
+  
+  gap: 30px;
+  line-height: 1.6;
+  
+  width: 85%;
+
+  border-radius: 15px;
+  
+}
+
+
+.putuaciones{
+
+  padding: 0%;
+
+  margin: 15px auto;
+  
+
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  
+  gap: 30px;
+  line-height: 1.6;
+  
+  width: 90%;
+
+  border-radius: 15px;
+  
+}
+
+
+
+.celda-larga{
+  display: flex;
+  padding: 0px;
+  
+  
+  border-radius: 20px;
+  background: #083672;
+  border-style: solid;
+  border-color: #083672;
+  overflow: hidden;
+  
+  transition: 0.4s;
+
+
+
+  
+  
+}
+
+.celda-larga:hover{
+  transform: scale(103%);
+  border-color: #42C5EF;
+}
+
+.celda-larga .texto{
+  flex:1;
+  margin: 30px 50px;
+
+  
+}
+
+.texto h1{
+  font-size: 2.8rem;
+
+  background-clip: text;
+  background: linear-gradient(130deg, #ffffff, #0B8CBF); /* Degradado de colores */
+  -webkit-background-clip: text; /* Aplica el fondo solo al texto */
+  -webkit-text-fill-color: transparent; /* Hace que el relleno del texto sea transparente para que se vea el degradado */
+}
+
+.texto p{
+  color:#ffffff;
+  margin: 10px 0px;
+  font-size: 1.35rem;
+}
+
+.celda-larga img{
+  flex:2;
+  object-fit: cover;
+  width: 300px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+
+
+  
+  
+}
+
+.celda-larga video{
+  flex:1;
+  object-fit: cover;
+  width: 300px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+
+}
+
+.separador{
+  padding: 20px;
+  margin: 40px 0px;
+  margin-bottom: 40px;
+
+  font-size: 2rem;
+  text-align: center;
+  
+
+ 
+  color: #ffffff; /* Color de la letra */
+  text-shadow: 0 0 10px #42C5EF,0 0 20px #0B8CBF, 0 0 60px #42C5EF ;
+
+
+}
+
+.puntuacion {
+  --background: #000000;
+  --cardShadow: rgba(32,33,37,.1);
+  --cardShadowHover: rgba(32,33,37,.06);
+  --cardShadowActive: rgba(32,33,37,.55);
+  --cardBorder: #0A6AA6;
+  --cardBorderActive: #1a73e8;
+  --textColor: #ffffff;
+  --linkColor: #1967d2;
+  --ratingColor: #faab00;
+}
+
+
+.puntuacion {
+  width: 250px;
+  height: 350px;
+  aspect-ratio: 2/3;
+  background: var(--background);
+  color: var(--textColor);
+  border: 3px solid var(--cardBorder);
+  padding: 25px;
+  box-shadow: 8px 8px 0 var(--cardShadow);
+  transition: box-shadow .5s, transform .5s;
+  border-radius: 8px;
+  display: inline-block;
+  margin:auto;
+}
+
+.puntuacion:hover {
+  transform: translate(0px, -15px);
+  box-shadow: 16px 16px 0 var(--cardShadowHover);
+}
+
+.puntuacion:active {
+  transform: translate(-2px, -4px);
+  border: 2px solid var(--cardBorderActive);
+  box-shadow: 4px 4px 0 var(--cardShadowActive);
+}
+
+.puntuacion > .icon,
+.puntuacion > .title,
+.puntuacion > .description {
+  margin-bottom: 0.7em;
+  cursor: default;
+  user-select: none;
+}
+
+.puntuacion > .title {
+  margin-top: 1.5em;
+  font-weight: bold;
+}
+
+.puntuacion> .description {
+  line-height: 1.5em;
+  min-height: 6em;
+}
+
+.puntuacion > .icon {
+  font-size: 1.8em;
+  margin-bottom: .2em;
+}
+
+.puntuacion > .rating {
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+  color: var(--ratingColor);
+  font-weight: bold;
+  position: relative;
+  width: max-content;
+}
+
+.puntuacion > .rating:before {
+  content: "☆☆☆☆☆";
+}
+
+.puntuacion > .rating:after {
+  content: "★★★★★";
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  width: calc(var(--rating) * 1%);
+  overflow: hidden;
+}
+
+
+.puntuaciones{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  width: 60%;
+  margin: 5% auto;
+  gap:20px;
+}
+
+
 
 .imagen{
   
   border-radius: 5px;
 }
 
-#img1{
-  border-radius: 50px;
-  
-  object-fit: cover;
-  object-position: center;
- 
-}
 
 .celda{
   padding: 10px;
@@ -513,11 +740,7 @@ header{
 
 
 
-.dato-blanco .contenido{
-  font-size: 1rem;
-  
-  
-}
+
 
 .dato-blanco .contenido p{
   margin:2% 0%;
@@ -538,15 +761,232 @@ video{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  border-radius: 0px;
+}
+
+#video-medusas{
+  border-radius: 50px;
+}
+
+#video-personas{
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 100%;
+}
+
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+  /* Set a specific height */
+  height: 80px;
+  width: 90%;
+  margin: 6% auto;
+
+  margin-bottom: 2%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-radius: 7px;
+  
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.centrado-flex{
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+}
+
+#introduccion{
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  
+}
+
+
+
+.bottone1{
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  font-size: 1.8rem;
+  background: #ffe816;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 10px;
+ }
+
+ #boton-comentario{
+  margin: 18px;
+ }
+ 
+ .bottone1:hover {
+  box-shadow: 7px 5px 56px -14px #C3D900;
+ }
+ 
+ .bottone1:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #C3D900;
+ }
+
+ #video-rayas{
+  max-height: 400px;
+}
+
+.burbuja {
+  position: absolute;
+  bottom: -150px; /* Empieza por debajo del área visible */
+  background-color: rgba(115, 214, 247, 0.616);
+  border-radius: 50%;
+  z-index: 9999;
+  animation: subir 20s infinite linear; /* Ajusta la duración para la altura de la página */
+}
+
+/* Cada burbuja tiene diferentes tamaños, velocidades y posiciones iniciales */
+.burbuja:nth-child(1) {
+  width: 60px;
+  height: 60px;
+  left: 40%;
+  animation-duration: 25s;
+}
+
+.burbuja:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  left: 30%;
+  animation-duration: 28s;
+}
+
+.burbuja:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  left: 80%;
+  animation-duration: 32s;
+}
+
+.burbuja:nth-child(4) {
+  width: 70px;
+  height: 70px;
+  left: 70%;
+  animation-duration: 29s;
+}
+
+.burbuja:nth-child(5) {
+  width: 30px;
+  height: 30px;
+  left: 20%;
+  animation-duration: 24s;
+}
+
+/* Añade más burbujas según lo necesites */
+
+@keyframes subir {
+  0% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-10000px); /* Subir hasta el tope */
+      opacity: 0; /* Desvanecerse justo cuando alcanzan el borde superior */
+  }
+}
+
+@media (max-width: 1600px){
+
+  .centrado-flex{
+    margin: 0px;
+  }
+
+
+
+  
+
+  
+  .descripcion h1{
+    font-size: 2rem;
+  }
+
+  .descripcion p{
+    font-size: 1rem;
+  }
+
+  .atracciones h1{
+    font-size: 1.35rem;
+
+  }
+
+  .atracciones p{
+    font-size: 1rem;
+  }
+
+  .separador{
+
+    font-size: 1rem;
+  
+  }
+
+  .bottone1{
+    width: 200px;
+    height: 60px;
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+
+  #video-rayas{
+    max-height: 350px;
+  }
+  
+
 }
 
 
 
 
 
+@media (max-width: 900px){
+.hero-text {
+  font-size: 0.6rem;
+}
 
-@media (max-width: 725px){
+#introduccion{
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  
+}
 
+#video-personas{
+  height: 900px;
+  
+}
+
+.logo{
+  font-size: 18px;
+
+
+}
 
   
 .bg-img{
@@ -621,6 +1061,40 @@ video{
   left:-20%;
 
 }
+
+.celda-larga{
+  flex-direction: column;
+}
+
+.celda-larga img{
+  width: 100%;
+}
+
+.celda-larga video{
+  width: 100%;
+}
+
+#video-rayas{
+  max-height: 300px;
+}
+
+.atracciones{
+
+
+
+
+  
+}
+
+.descripcion h1{
+  font-size: 2rem;
+}
+
+.descripcion p{
+  font-size: 1rem;
+}
+
+  
 
 
 
