@@ -1357,7 +1357,7 @@ input::placeholder, .textComentario::placeholder{
     position: absolute;
     width: 1140px;
     max-width: 90%;
-    height: 80%;
+    height: 100%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -1412,6 +1412,7 @@ input::placeholder, .textComentario::placeholder{
 .carousel .list .item .introduce .des{
     font-size: small;
     color: rgba(255, 255, 255, 0.897);
+    padding:  0 50px 0 0;
 }
 .carousel .list .item .introduce .seeMore{
     font-family: Poppins;
