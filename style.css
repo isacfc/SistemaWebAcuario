@@ -1412,7 +1412,7 @@ input::placeholder, .textComentario::placeholder{
 .carousel .list .item .introduce .des{
     font-size: small;
     color: rgba(255, 255, 255, 0.897);
-    padding:  0 50px 0 0;
+    padding:  0 40px 0 0;
 }
 .carousel .list .item .introduce .seeMore{
     font-family: Poppins;
@@ -1428,6 +1428,7 @@ input::placeholder, .textComentario::placeholder{
 }
 .carousel .list .item .introduce .seeMore:hover{
     background: #eee;
+    color: #000000;
 }
 .carousel .list .item:nth-child(1){
     transform: var(--item1-transform);
@@ -1545,6 +1546,7 @@ input::placeholder, .textComentario::placeholder{
 .carousel .list .item .detail{
     opacity: 0;
     pointer-events: none;
+    padding: 0 0 0 20px;
 }
 /* showDetail */
 .carousel.showDetail .list .item:nth-child(3),
@@ -1570,11 +1572,27 @@ input::placeholder, .textComentario::placeholder{
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    text-align: right;
+    text-align: left;
     pointer-events: auto;
 }
+
+.detail .des{
+  color: white;
+}
+
+.lista{
+  color: rgb(143, 201, 255);
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+
 .carousel.showDetail .list .item:nth-child(2) .detail .title{
     font-size: 4em;
+    background: linear-gradient(130deg, #ffffff, #0B8CBF); /* Degradado de colores */
+    -webkit-background-clip: text; /* Aplica el fondo solo al texto */
+    -webkit-text-fill-color: transparent; /* Hace que el relleno del texto sea transparente para que se vea el degradado */
 }
 .carousel.showDetail .list .item:nth-child(2) .detail .specifications{
     display: flex;
@@ -1632,14 +1650,15 @@ input::placeholder, .textComentario::placeholder{
 }
 #prev,
 #next{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     font-family: monospace;
     border: 1px solid #5555;
     font-size: large;
     bottom: 20%;
     left: 10%;
+    font-size: 30px;
 }
 #next{
     left: unset;
@@ -1650,6 +1669,7 @@ input::placeholder, .textComentario::placeholder{
     z-index: 100;
     bottom: 0%;
     left: 50%;
+    font-size: 30px;
     transform: translateX(-50%);
     border: none;
     border-bottom: 1px solid #555;
@@ -1658,6 +1678,7 @@ input::placeholder, .textComentario::placeholder{
     letter-spacing: 3px;
     background-color: transparent;
     padding: 10px;
+    color: wheat;
     /* opacity: 0; */
     transition: opacity 0.5s;
 }
@@ -1687,6 +1708,36 @@ input::placeholder, .textComentario::placeholder{
     transform: translate(-100%, -50%) rotate(90deg);
     filter: blur(130px);
 }
+
+
+
+.formulario{
+  width: 80%;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 20px;
+  gap:100px;
+}
+
+input{
+  border-style: solid;
+  border-color: red;
+  
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+        }
 @media screen and (max-width: 991px){
     /* ipad, tablets */
     .carousel .list .item{
@@ -1707,6 +1758,8 @@ input::placeholder, .textComentario::placeholder{
     .carousel .list .item{
         width: 100%;
         font-size: 10px;
+        margin-top: 30px;
+        gap: 100px;
     }
     
     .carousel .list{
@@ -1717,7 +1770,8 @@ input::placeholder, .textComentario::placeholder{
     }
     
     .carousel .list .item img{
-        width: 40%;
+        width: 50%;
+        margin-right: 20px;
     }
     .carousel.showDetail .list .item:nth-child(2) .detail{
         backdrop-filter: blur(10px);
@@ -1725,8 +1779,8 @@ input::placeholder, .textComentario::placeholder{
     }
     .carousel .list .item:nth-child(2) .introduce .des,
     .carousel.showDetail .list .item:nth-child(2) .detail .des{
-        height: 100px;
-        overflow: auto;
+        height: 280px;
+        overflow:visible;
     }
     .carousel.showDetail .list .item:nth-child(2) .detail .checkout{
         display: flex;
