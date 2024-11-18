@@ -1345,8 +1345,254 @@ input::placeholder, .textComentario::placeholder{
     --item5-opacity: 0;
 }
 
+/************************ FOMULARIO  ***********************************/
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 300px;
+  max-width: 40%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
 
-/* carousel */
+.contador{
+  text-align: center;
+}
+
+
+
+
+/* Ocultar el formato predeterminado (dd/mm/aaaa) cuando no hay valor */
+label .input.calendario::-webkit-datetime-edit {
+  color: transparent; /* Hace invisible el texto inicial */
+}
+
+.input.calendario{
+  text-align: center;
+}
+
+/* Mostrar el texto del campo normalmente cuando el usuario ingresa algo */
+label .input.calendario:focus::-webkit-datetime-edit,
+label .input.calendario:valid::-webkit-datetime-edit {
+  color: black; /* Muestra el texto ingresado */
+}
+
+input[type="date"]::-webkit-datetime-edit {
+  color: black; /* Asegúrate de que el texto ingresado sea visible */
+}
+
+
+.form .title-f {
+  font-size: 28px;
+  color: #083372;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.form .title-f::before,.title-f::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #083672;;
+}
+
+.form .title-f::before {
+  width: 18px;
+  height: 18px;
+  background-color: #083672;;
+}
+
+.form .title-f::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: royalblue;
+}
+
+.signin a:hover {
+  text-decoration: underline #083372;
+}
+
+.flex {
+  display: flex;
+  gap: 6px;
+}
+
+.flex label {
+  flex: 1;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: #083372;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+
+.submit:hover {
+  background-color: rgb(56, 90, 194);
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+
+.radio-tile-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.radio-tile-group .input-container {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  margin: 0.5rem;
+}
+
+.radio-tile-group .input-container .radio-button {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.radio-tile-group .input-container .radio-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #083372;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: transform 300ms ease;
+}
+
+.radio-tile-group .input-container .icon svg {
+  fill: #083372;
+  width: 2rem;
+  height: 2rem;
+}
+
+.radio-tile-group .input-container .radio-tile-label {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #083372;
+}
+
+.radio-tile-group .input-container .radio-button:checked + .radio-tile {
+  background-color: #083372;
+  border: 2px solid #083372;
+  color: white;
+  transform: scale(1.1, 1.1);
+}
+
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .icon svg {
+  fill: white;
+  background-color: #083372;
+}
+
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .radio-tile-label {
+  color: white;
+  background-color: #083372;
+}
+
+
+
+/*************************************FIN DE FORUMLARIO*******************************************/
+
+
+
+
+
+
+
+
+/*///// carousel //////////////*/
 .carousel{
     position: relative;
     height: 800px;
@@ -1405,7 +1651,7 @@ input::placeholder, .textComentario::placeholder{
     color:white;
 }
 .carousel .list .item .introduce .topic{
-    font-size: 4em;
+    font-size: 3.3em;
     font-weight: 500;
     color:white;
 }
@@ -1415,16 +1661,17 @@ input::placeholder, .textComentario::placeholder{
     padding:  0 40px 0 0;
 }
 .carousel .list .item .introduce .seeMore{
-    font-family: Poppins;
+    
     margin-top: 1.2em;
     padding: 5px 0;
     border: none;
     border-bottom: 1px solid #555;
     background-color: transparent;
-    font-weight: bold;
+    font-weight: 900;
     letter-spacing: 3px;
+    font-size: 15px;
     transition: background 0.5s;
-    color:white;
+    color:rgb(202, 255, 252);
 }
 .carousel .list .item .introduce .seeMore:hover{
     background: #eee;
@@ -1557,6 +1804,7 @@ input::placeholder, .textComentario::placeholder{
 }
 .carousel.showDetail .list .item:nth-child(2){
     width: 100%;
+    
 }
 .carousel.showDetail .list .item:nth-child(2) .introduce{
     opacity: 0;
@@ -1593,6 +1841,7 @@ input::placeholder, .textComentario::placeholder{
     background: linear-gradient(130deg, #ffffff, #0B8CBF); /* Degradado de colores */
     -webkit-background-clip: text; /* Aplica el fondo solo al texto */
     -webkit-text-fill-color: transparent; /* Hace que el relleno del texto sea transparente para que se vea el degradado */
+    background-clip: text;
 }
 .carousel.showDetail .list .item:nth-child(2) .detail .specifications{
     display: flex;
@@ -1678,7 +1927,7 @@ input::placeholder, .textComentario::placeholder{
     letter-spacing: 3px;
     background-color: transparent;
     padding: 10px;
-    color: wheat;
+    color: rgb(255, 255, 255);
     /* opacity: 0; */
     transition: opacity 0.5s;
 }
@@ -1710,34 +1959,6 @@ input::placeholder, .textComentario::placeholder{
 }
 
 
-
-.formulario{
-  width: 80%;
-  background-color: #ffffff;
-  margin: 0 auto;
-  padding: 20px;
-  gap:100px;
-}
-
-input{
-  border-style: solid;
-  border-color: red;
-  
-}
-
-
-input[type="text"],
-input[type="email"],
-input[type="date"],
-input[type="number"] {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-        }
 @media screen and (max-width: 991px){
     /* ipad, tablets */
     .carousel .list .item{
@@ -1749,11 +1970,13 @@ input[type="number"] {
     .carousel.showDetail .list .item:nth-child(2) .detail .title{
         font-size: 2em;
     }
+
+    
 }
 @media screen and (max-width: 767px){
     /* mobile */
     .carousel{
-        height: 600px;
+        height: 650px;
     }
     .carousel .list .item{
         width: 100%;
@@ -1763,29 +1986,48 @@ input[type="number"] {
     }
     
     .carousel .list{
-        height: 100%;
+      padding-top: 80px;
+        height: 400px;
     }
+
+    
     .carousel .list .item:nth-child(2) .introduce{
-        width: 50%;
+        width: 48%;
     }
     
     .carousel .list .item img{
-        width: 50%;
+        width: 45%;
         margin-right: 20px;
     }
     .carousel.showDetail .list .item:nth-child(2) .detail{
         backdrop-filter: blur(10px);
         font-size: small;
+        margin-top: 50px; 
     }
-    .carousel .list .item:nth-child(2) .introduce .des,
+    .carousel .list .item:nth-child(2) .introduce .des{
+      height: 150px;
+      overflow:visible;
+
+    }
     .carousel.showDetail .list .item:nth-child(2) .detail .des{
-        height: 280px;
-        overflow:visible;
+       
+      height: 410px;
+        overflow:hidden;
     }
     .carousel.showDetail .list .item:nth-child(2) .detail .checkout{
         display: flex;
         width: max-content;
         float: right;
+    }
+
+    .lista{
+      
+      font-size: 1rem;
+    }
+
+    #back{
+      margin-top: 50px;
+      font-size: 20px;
     }
 }
 
