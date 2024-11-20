@@ -141,7 +141,18 @@ header{
   font-weight: bold;
   color:  #eaf2f8;
   z-index: 9999;
+  cursor: pointer; /* Cambia el cursor al estilo clickeable */
 
+}
+
+
+#segundoContenedor{
+  padding-top: 0px;
+}
+
+
+.logo:hover {
+  text-decoration: underline; /* Subraya el texto al pasar */
 }
 .hamburger{
   display: none;
@@ -278,6 +289,10 @@ header{
   z-index: 9999;
 }
 
+
+.diagonal {
+  font-size: 30px;
+}
 @media only screen and (max-width: 1320px){
   header{
     padding: 0 50px;
@@ -845,6 +860,7 @@ video{
   cursor: pointer;
   transition: 0.4s;
   margin: 10px;
+  font-weight: bold;
  }
 
  #boton-comentario{
@@ -1226,7 +1242,7 @@ input::placeholder, .textComentario::placeholder{
 }
 
 .btn-summit{
-  background-color: #007399;
+  background-color: #0A6AA6;
   color: #fff;
   margin-right: 10px;
 }
@@ -1471,6 +1487,7 @@ input[type="date"]::-webkit-datetime-edit {
 .form label .input:placeholder-shown + span {
   top: 15px;
   font-size: 0.9em;
+  color: gray;
 }
 
 .form label .input:focus + span,.form label .input:valid + span {
@@ -1482,6 +1499,14 @@ input[type="date"]::-webkit-datetime-edit {
 .form label .input:valid + span {
   color: green;
 }
+
+.form label .input:invalid:not(:placeholder-shown) + span {
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: red;
+}
+
 
 .submit {
   border: none;
@@ -1581,6 +1606,26 @@ input[type="date"]::-webkit-datetime-edit {
   background-color: #083372;
 }
 
+.price-display {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #0A6AA6; 
+  
+  font-size: 1.2rem; 
+  font-weight: bold;
+}
+
+.price-display #precio-total {
+  font-size: 1.8rem; 
+  color: #083672; 
+}
+
+.price-display span {
+  display: inline-block;
+  margin-right: 5px; 
+}
+
 
 
 /*************************************FIN DE FORUMLARIO*******************************************/
@@ -1656,9 +1701,10 @@ input[type="date"]::-webkit-datetime-edit {
     color:white;
 }
 .carousel .list .item .introduce .des{
-    font-size: small;
+    font-size: medium;
     color: rgba(255, 255, 255, 0.897);
     padding:  0 40px 0 0;
+    height: 150px;
 }
 .carousel .list .item .introduce .seeMore{
     
@@ -1928,7 +1974,7 @@ input[type="date"]::-webkit-datetime-edit {
     background-color: transparent;
     padding: 10px;
     color: rgb(255, 255, 255);
-    /* opacity: 0; */
+    opacity: 0;
     transition: opacity 0.5s;
 }
 .carousel.showDetail #back{
@@ -1970,6 +2016,11 @@ input[type="date"]::-webkit-datetime-edit {
     .carousel.showDetail .list .item:nth-child(2) .detail .title{
         font-size: 2em;
     }
+    .form{
+      min-width: 90%px;
+      max-width: 90%;
+      width: 90%;
+    }
 
     
 }
@@ -2005,8 +2056,12 @@ input[type="date"]::-webkit-datetime-edit {
         margin-top: 50px; 
     }
     .carousel .list .item:nth-child(2) .introduce .des{
-      height: 150px;
+      height: 180px;
       overflow:visible;
+     
+      font-size: small;
+        
+    
 
     }
     .carousel.showDetail .list .item:nth-child(2) .detail .des{
@@ -2029,6 +2084,8 @@ input[type="date"]::-webkit-datetime-edit {
       margin-top: 50px;
       font-size: 20px;
     }
+
+    
 }
 
 

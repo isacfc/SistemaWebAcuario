@@ -19,9 +19,9 @@
         <div class="burbuja"></div>
         <div class="burbuja"></div>
         <header>
-            <div class="logo">
+            <a href="index.html" class="logo">
                 Acuario Crystal
-            </div>
+            </a>
             <div class="hamburger">
                 <div class="line"></div>
                 <div class="line"></div>
@@ -35,7 +35,7 @@
                         <a href=""  class="active ">Paquetes/Comprar</a>
                     </li>
                     <li>
-                        <a href="">Historia</a>
+                        <a href="historia.html">Historia</a>
                     </li>
                     <li>
                         <a href="contact_us.html" >Contáctanos</a>
@@ -59,6 +59,11 @@
                             <div class="topic">TIBURÓN</div>
                             <div class="des">
                                 Para los verdaderos entusiastas del mundo marino: accede a todas las áreas, evita filas y disfruta de un recorrido exclusivo tras bambalinas
+                                <br>
+                                <ul>
+                                    <li>•Precio Adulto: $1300</li>
+                                    <li>•Precio Niño: $1040</li>
+                                </ul>
                             </div>
                             <button class="seeMore">VER DETALLES &#8599</button>
                         </div>
@@ -85,6 +90,10 @@
                             <div class="topic">MEDUSA</div>
                             <div class="des">
                                 El paquete ideal para quienes desean disfrutar de todas las áreas comunes y exhibiciones, explorando lo mejor de nuestro acuario, incluido el fascinante túnel de cristal.
+                                <ul>
+                                    <li>•Precio Adulto: $80</li>
+                                    <li>•Precio Niño: $64</li>
+                                </ul>
                             </div>
                             <button class="seeMore">VER DETALLES &#8599</button>
                         </div>
@@ -108,6 +117,10 @@
                             <div class="topic">CANGREJO</div>
                             <div class="des">
                                 Perfecto para quienes buscan una experiencia más cómoda y deliciosa: disfruta de todos los beneficios del paquete Medusa, con fila rápida y un combo de palomitas y refresco.
+                                <ul>
+                                    <li>•Precio Adulto: $150</li>
+                                    <li>•Precio Niño: $120</li>
+                                </ul>
                             </div>
                             <button class="seeMore">VER DETALLES &#8599</button>
                         </div>
@@ -133,6 +146,10 @@
                             <div class="des">
                              
                                 Una experiencia enriquecida para los amantes de la vida marina: explora todas las áreas, evita las filas y vive la emoción de alimentar a las rayas
+                                <ul>
+                                    <li>•Precio Adulto: $259</li>
+                                    <li>•Precio Niño: $207.2</li>
+                                </ul>
                             </div>
                             <button class="seeMore">VER DETALLES &#8599</button>
                         </div>
@@ -163,6 +180,10 @@
                             <div class="topic">BALLENA</div>
                             <div class="des">
                                 El paquete ideal para los exploradores nocturnos: disfruta de todo lo que ofrece el acuario, con acceso exclusivo a nuestro cautivador acuario nocturno.
+                                <ul>
+                                    <li>•Precio Adulto: $586</li>
+                                    <li>•Precio Niño: $468.8</li>
+                                </ul>
                             </div>
                             <button class="seeMore">VER DETALLES &#8599</button>
                         </div>
@@ -199,17 +220,17 @@
                 
                 
                 <label>
-                    <input id="nombre" name="nombre"  class="input" type="text" placeholder="" required="">
+                    <input id="nombre" name="nombre"  class="input" type="text" pattern="^[a-zA-ZÁÉÍÓÚáéíóúÑñ\s]+$" placeholder="" required="">
                     <span>Nombre(s)</span>
                 </label> 
                 <div class="flex">
                     <label>
-                        <input id="apaterno" name="apaterno" class="input" type="text" placeholder="" required="">
+                        <input id="apaterno" name="apaterno" class="input" type="text" pattern="^[a-zA-ZÁÉÍÓÚáéíóúÑñ\s]+$" placeholder="" required="">
                         <span>Ap. Paterno</span>
                     </label>
             
                     <label>
-                        <input id="amaterno" id="amaterno" class="input" type="text" placeholder="" required="">
+                        <input id="amaterno" name="amaterno" class="input" type="text" pattern="^[a-zA-ZÁÉÍÓÚáéíóúÑñ\s]+$" placeholder="" required="">
                         <span>Ap. Materno</span>
                     </label>
                 </div> 
@@ -248,7 +269,7 @@
 
                 <div class="radio-tile-group">
                     <div class="input-container">
-                      <input id="medusa" class="radio-button" type="radio" name="paquete" value="1">
+                      <input id="medusa" class="radio-button" type="radio" name="paquete" value="1" required>
                       <div class="radio-tile">
                         <div class="icon walk-icon">
                           <svg height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M216.301,173.264l-48.142,15.953c0,9.104,4.372,17.184,11.13,22.261 c-6.758,5.077-11.13,13.157-11.13,22.261s4.372,17.184,11.13,22.261c-6.758,5.077-11.13,13.157-11.13,22.261 c0,9.104,4.372,17.185,11.13,22.261c-6.758,5.075-11.13,13.157-11.13,22.261s4.372,17.185,11.13,22.261 c-6.758,5.075-11.13,13.157-11.13,22.261c0,9.104,4.372,17.185,11.13,22.261c-6.758,5.076-11.13,13.157-11.13,22.261 c0,9.104,4.372,17.185,11.13,22.261c-6.758,5.075-11.13,13.157-11.13,22.261c0,15.368,12.458,27.826,27.826,27.826L216.301,173.264z "></path> <path d="M316.015,484.174c15.368,0,27.826-12.458,27.826-27.826c0-9.104-4.372-17.185-11.13-22.261 c6.758-5.075,11.13-13.157,11.13-22.261c0-9.104-4.372-17.185-11.13-22.261c6.758-5.075,11.13-13.157,11.13-22.261 c0-9.104-4.372-17.185-11.13-22.261c6.758-5.075,11.13-13.157,11.13-22.261s-4.372-17.185-11.13-22.261 c6.758-5.075,11.13-13.157,11.13-22.261c0-9.104-4.372-17.184-11.13-22.261c6.758-5.077,11.13-13.157,11.13-22.261 s-4.372-17.184-11.13-22.261c6.758-5.077,11.13-13.157,11.13-22.261l-50.369-15.953L316.015,484.174z"></path> <path d="M358.99,19.667C328.515,7.146,293.387,0,256,0l-30.052,72.348 C263.335,72.348,334.284,48.603,358.99,19.667z"></path> <g> <path d="M256,0c-37.387,0-72.515,7.146-102.99,19.667C173.264,47.861,218.613,73.832,256,73.832V0z"></path> <path d="M44.41,155.826v267.13h30.887V189.217h30.987v267.13h30.887v-267.13h58.813V512 c24.588,0,44.522-19.932,44.522-44.522V189.217H256l35.247-80.51L44.41,155.826z"></path> </g> <path d="M256,111.675v77.542h15.494v278.261c0,24.589,19.934,44.522,44.522,44.522V189.217h58.813v267.13 h30.887v-267.13h30.987v233.739h30.887v-267.13L256,111.675z"></path> <path d="M199.235,39.699L256,155.826h211.59c0-46.492-27.648-88.22-71.491-116.781 C370.643,39.046,239.627,39.699,199.235,39.699z"></path> <g> <path d="M256,72.726c40.392,0,80.395-7.669,115.69-22.172c8.493-3.495,16.629-7.335,24.409-11.509 c-11.353-7.391-23.786-13.902-37.109-19.378C328.515,32.2,293.387,39.335,256,39.335l-24.116,15.947L256,72.726z"></path> <path  d="M256,38.957c-40.392,0-117.612,0.089-140.099,0.089C72.058,67.606,44.41,109.334,44.41,155.826H256 V38.957z"></path> </g> <path d="M256,72.726V39.335c-37.387,0-72.515-7.135-102.99-19.667c-13.323,5.476-25.756,11.987-37.109,19.378 c7.78,4.174,15.917,8.014,24.409,11.509C175.605,65.057,215.608,72.726,256,72.726z"></path> </g></svg>
@@ -258,7 +279,7 @@
                     </div>
                 
                     <div class="input-container">
-                      <input id="cangrejo" class="radio-button" type="radio" name="paquete" value="2">
+                      <input id="cangrejo" class="radio-button" type="radio" name="paquete" value="2" required>
                       <div class="radio-tile">
                         <div class="icon bike-icon">
                             <svg fill="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M23,4.459a3.851,3.851,0,0,0-.558-1.973,1.04,1.04,0,0,0-1.716,0,2.018,2.018,0,0,1-3.452,0,1,1,0,0,0-1.716,0A3.851,3.851,0,0,0,15,4.459a3.931,3.931,0,0,0,3,3.78V9.268a10.548,10.548,0,0,0-6-1.916A10.548,10.548,0,0,0,6,9.268V8.239a3.931,3.931,0,0,0,3-3.78,3.851,3.851,0,0,0-.558-1.973,1.04,1.04,0,0,0-1.716,0,2.018,2.018,0,0,1-3.452,0,1,1,0,0,0-1.716,0A3.851,3.851,0,0,0,1,4.459a3.931,3.931,0,0,0,3,3.78v2.773A12.639,12.639,0,0,0,2.111,13.73a1,1,0,0,0,0,.918,12.757,12.757,0,0,0,1.177,1.859l-1.651.642a1,1,0,0,0,.726,1.864l2.364-.921q.277.257.568.492L3.352,20.238a1,1,0,0,0,1.3,1.524l2.372-2.02a10.292,10.292,0,0,0,9.96,0l2.372,2.02a1,1,0,0,0,1.3-1.524L18.7,18.584q.291-.235.568-.492l2.364.921a1,1,0,0,0,.726-1.864l-1.651-.642a12.843,12.843,0,0,0,1.177-1.859,1,1,0,0,0,0-.918A12.639,12.639,0,0,0,20,11.012V8.239A3.931,3.931,0,0,0,23,4.459Zm-5.93.505a4.126,4.126,0,0,0,3.86,0,2.024,2.024,0,0,1-3.86,0Zm-14,0a4.126,4.126,0,0,0,3.86,0,2.024,2.024,0,0,1-3.86,0Zm1.069,9.225A9.217,9.217,0,0,1,12,9.352a9.217,9.217,0,0,1,7.861,4.837A9.217,9.217,0,0,1,12,19.027,9.217,9.217,0,0,1,4.139,14.189Z"></path></g></svg>
@@ -268,7 +289,7 @@
                     </div>
                 
                     <div class="input-container">
-                      <input id="tortuga" class="radio-button" type="radio" name="paquete" value="3">
+                      <input id="tortuga" class="radio-button" type="radio" name="paquete" value="3" required>
                       <div class="radio-tile">
                         <div class="icon car-icon">
                             <svg fill="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M22,7H15.757c-.082-.046-.168-.085-.251-.128A3.921,3.921,0,0,0,16,5,4,4,0,0,0,8,5a3.918,3.918,0,0,0,.494,1.872c-.083.043-.169.082-.251.128H2a1,1,0,0,0-.928,1.372,9.68,9.68,0,0,0,3.22,3.883,8.521,8.521,0,0,0-.2,3.461C2.03,18.017,2,21.829,2,22a1,1,0,0,0,1,1,.982.982,0,0,0,.394-.081L7.2,21.286a7.57,7.57,0,0,0,9.594,0l3.809,1.633A.982.982,0,0,0,21,23a1,1,0,0,0,1-1c0-.17-.03-3.982-2.092-6.283A8.854,8.854,0,0,0,20,14.5a8.958,8.958,0,0,0-.292-2.245,9.7,9.7,0,0,0,3.221-3.883A1,1,0,0,0,22,7ZM10,5a2,2,0,0,1,4,0,1.957,1.957,0,0,1-.394,1.172,7.584,7.584,0,0,0-3.212,0A1.964,1.964,0,0,1,10,5ZM5.042,10.318A7.891,7.891,0,0,1,3.767,9H5.91A9.377,9.377,0,0,0,5.042,10.318Zm-.883,10.1a8.968,8.968,0,0,1,.657-2.174,11.034,11.034,0,0,0,.9,1.508ZM6,14.5a6.926,6.926,0,0,1,.408-2.337h0a6.111,6.111,0,0,1,4.829-4.1,5.344,5.344,0,0,1,1.526,0A6.368,6.368,0,0,1,18,14.5,6.294,6.294,0,0,1,12,21,6.29,6.29,0,0,1,6,14.5Zm13.188,3.734a8.778,8.778,0,0,1,.651,2.18l-1.551-.665A11.571,11.571,0,0,0,19.188,18.234Zm-.23-7.916A9.172,9.172,0,0,0,18.091,9h2.142A7.891,7.891,0,0,1,18.958,10.318ZM13,17.714a1,1,0,0,1-1,1A4.116,4.116,0,0,1,8,14.5a1,1,0,0,1,2,0,2.117,2.117,0,0,0,2,2.214A1,1,0,0,1,13,17.714Z"></path></g></svg>
@@ -278,7 +299,7 @@
                     </div>
 
                     <div class="input-container">
-                        <input id="ballena" class="radio-button" type="radio" name="paquete" value="4">
+                        <input id="ballena" class="radio-button" type="radio" name="paquete" value="4" required>
                         <div class="radio-tile">
                           <div class="icon car-icon">
                             <svg fill="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M23,12a1,1,0,0,0-1-1H17V8a1,1,0,0,0-2,0v3H13.1A5.231,5.231,0,0,1,8.292,7.79,3.761,3.761,0,0,0,11,4a1,1,0,0,0-.293-.707A4.5,4.5,0,0,0,9.066,2.3,3.427,3.427,0,0,0,6,2.712,3.426,3.426,0,0,0,2.934,2.3a4.5,4.5,0,0,0-1.641.991A1,1,0,0,0,1,4,3.766,3.766,0,0,0,3.941,7.846l-.407,6.105a8.436,8.436,0,0,0,2.8,6.878,1,1,0,1,0,1.336-1.488A6.449,6.449,0,0,1,5.7,16.008a9.638,9.638,0,0,0,3.775,1.9c1.078,1.4-.245,3.448-.3,3.536A1,1,0,0,0,10.2,22.98a6.022,6.022,0,0,0,4.143-2.515,4.9,4.9,0,0,0,.737-2.486,23.388,23.388,0,0,0,4.058-.507,8.984,8.984,0,0,1-3.534,2.78,1,1,0,1,0,.8,1.832,11,11,0,0,0,5.727-5.806c.015-.029.026-.058.038-.088A10.987,10.987,0,0,0,23,12ZM3.034,4.444a1.646,1.646,0,0,1,2.259.263,1,1,0,0,0,1.414,0,1.649,1.649,0,0,1,2.259-.264A1.885,1.885,0,0,1,7,6H5.008A1.888,1.888,0,0,1,3.034,4.444ZM14,16a1.005,1.005,0,0,0-.972,1.234,3.132,3.132,0,0,1-.391,2.181,2.944,2.944,0,0,1-.87.858,4.214,4.214,0,0,0-1.06-3.98,1,1,0,0,0-.543-.279,6.809,6.809,0,0,1-4.546-3.242L5.936,8h.293a7.242,7.242,0,0,0,6.87,5h7.845a8.958,8.958,0,0,1-.487,2.042A20.318,20.318,0,0,1,14,16ZM13,3a1,1,0,0,1,0-2,3.99,3.99,0,0,1,3,1.357A3.99,3.99,0,0,1,19,1a1,1,0,0,1,0,2,2,2,0,0,0-2,2,1,1,0,0,1-2,0A2,2,0,0,0,13,3Z"></path></g></svg>
@@ -289,7 +310,7 @@
 
 
                     <div class="input-container">
-                    <input id="tiburon" class="radio-button" type="radio" name="paquete" value="5">
+                    <input id="tiburon" class="radio-button" type="radio" name="paquete" value="5" required>
                     <div class="radio-tile">
                         <div class="icon car-icon">
                             <svg fill="" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 241 256" enable-background="new 0 0 241 256" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M232.785,40.548c-10.105-2.327-31.558-7-65.995-7c-3.037,0-22.744,0-22.744,0l-3.815-4.781 c-8.755-10.973-20.496-19.165-33.825-23.572L96.773,2l-0.039,26.165c0,6.507-4.318,12.176-10.549,14.029 c-10.598,3.155-20.901,7.542-27.526,10.578C24.607,68.389,2.306,93.105,2.306,119.605c0,28.512,24.282,50.842,62.584,64.131 c-1.094,4.643-1.686,9.474-1.686,14.453c0,24.213,13.635,45.242,33.648,55.81c-5.077-11.436-7.897-24.085-7.897-37.404 c0-34.693,19.126-64.92,47.421-80.694c-3.283-0.532-6.645-0.808-10.076-0.808c-24.41,0-45.557,13.861-56.057,34.141 c-8.189-3.497-18.377-11.039-18.377-21.407c0-9.771,7.969-15.445,15.784-16.5c42.804-5.778,58.975-7.552,95.246-16.119 c22.251-5.255,38.666-12.363,49.954-22.103c0.946-0.887,0.72-2.475-0.453-3.046c-8.064-3.904-29.458-4.545-41.091-4.584 c-0.01,0-0.02-0.01-0.03-0.01c-3.687-0.03-3.391-3.332-1.39-4.584c6.773-4.032,15.321-6.832,24.726-8.538l3.598,6.586l8.173-7.848 l3.273,10.184l8.479-10.342l4.703,11.791c0-0.01,0.01-0.01,0.01-0.01l7.798-11.89c4.397-8.203,6.684-15.843,7.867-21.117 C239.41,45.576,236.896,41.494,232.785,40.548z M189.712,50.939h-0.069l-5.679-0.128c-2.11-0.039-3.786-1.775-3.746-3.874 c0.039-2.08,1.735-3.746,3.815-3.746h0.069l5.679,0.128c2.1,0.039,3.776,1.775,3.736,3.884 C193.488,49.273,191.792,50.939,189.712,50.939z"></path> </g></svg>
@@ -299,28 +320,71 @@
                     </div>
                     </div>
                 </div>
+                
+                
+                <div class="price-display">
+                    <span  id="precio-total" >Total: $0.00</span> MXN
+                </div>
+
+
+
 
                 <p class="title-f">Medio de pago</p>
                 <p class="message">Introduzca un medio de pago válido </p>
                 
+                <p class="message">No. de tarjeta </p>
                 
-                <label>
-                    <input id="tarjeta" name="tarjeta" class="input" type="text" placeholder="" required="">
-                    <span>No. de tarjeta</span>
-                </label> 
                 <div class="flex">
                     <label>
-                        <input id="caducidad" name="caducidad" class="input" type="text" placeholder="" required="">
-                        <span>Fecha de Cad.</span>
-                    </label>
-            
+                        <input id="tarjeta1" name="tarjeta1" class="input" type="text" pattern="^\d+$"  minlength="4" maxlength="4" placeholder="" required="">
+                        
+                        
+                    </label> 
+                    <span class="diagonal">-</span>
                     <label>
-                        <input id="cvv" name="cvv" class="input" type="text" placeholder="" required="">
-                        <span>CVV</span>
+                        <input id="tarjeta2" name="tarjeta2" class="input" type="text" pattern="^\d+$"  minlength="4" maxlength="4" placeholder="" required="">
+                        
                     </label>
+                    <span class="diagonal">-</span> 
+                    <label>
+                        <input id="tarjeta3" name="tarjeta3" class="input" type="text" pattern="^\d+$"  minlength="4" maxlength="4" placeholder="" required="">
+                        
+                    </label> 
+                    <span class="diagonal">-</span>
+                    <label>
+                        <input id="tarjeta4" name="tarjeta4" class="input" type="text" placeholder="" pattern="^\d+$"  minlength="4" maxlength="4" required="">
+                        
+                    </label> 
+            
+                    
                 </div>  
 
-                <button class="submit">Comprar</button>
+                <p class="message">Fecha de caducidad</p>
+
+                <div class="flex">
+                    <label>
+                        <input id="caducidad1" name="caducidad1" class="input" type="text" pattern="^\d+$"  maxlength="2" placeholder="" required="">
+                        <span>Mes</span>
+                    </label>
+
+                    <span class="diagonal">/</span>
+
+                    <label>
+                        <input id="caducidad2" name="caducidad2" class="input" type="text" pattern="^\d+$"  maxlength="2" placeholder="" required="">
+                        <span>Año</span>
+                    </label>
+            
+                    
+                </div>  
+
+                <label>
+                    <input id="cvv" name="cvv" pattern="\d*" maxlength="3" class="input" type="text" pattern="^\d+$"  maxlength="3" placeholder="" required="">
+                    <span>CVV</span>
+                </label>
+
+                <button class="submit" id="comprar">Comprar</button>
+
+                
                 
             </form>
 
@@ -334,32 +398,33 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col">
-                        <h4>Compañía</h4>
+                        <h4>Acuario</h4>
                         <ul>
-                            <li><a href="">Sobre nosotros</a></li>
+                            <li><a href="index.html">Inicio</a></li>
                             <li><a href="">Nuestra historia</a></li>
-                            <li><a href="">Carreras</a></li>
-                            <li><a href="">Prensa</a></li>
                         </ul>
                     </div>
-                    <div class="footer-col">
-                        <h4>Ayuda</h4>
-                        <ul>
-                            <li><a href="">Preguntas frecuentes</a></li>
-                            <li><a href="">Soporte</a></li>
-                            <li><a href="">Políticas</a></li>
-                            <li><a href="">Contacto</a></li>
-                        </ul>
-                    </div>
+                    
                     <div class="footer-col">
                         <h4>Tienda en línea</h4>
                         <ul>
-                            <li><a href="">Entradas</a></li>
-                            <li><a href="">Paquetes</a></li>
-                            <li><a href="">Regalos</a></li>
-                            <li><a href="">Merchandising</a></li>
+                            <li><a href="packages.html">Entradas</a></li>
+                            <li><a href="packages.html">Paquetes</a></li>
                         </ul>
                     </div>
+
+                    
+
+                    <div class="footer-col">
+                        <h4>Contactanos</h4>
+                        <ul>
+                            <li><p style="color: #eaf2f8;">+52 771 343 5656</p></li>
+                            <li><p style="color: #eaf2f8;">+52 55 646 6666</p></li>
+                            <li><a href="contact_us.html">Regalanos un comentario</a></li>
+                            
+                        </ul>
+                    </div>
+
                     <div class="footer-col">
                         <h4>Síguenos</h4>
                         <div class="social-links">
@@ -369,10 +434,13 @@
                             <a href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
+
+                    <div class="footer-col">
+                        <p style="color: #eaf2f8;">©Acuario Crystal <br> Todos los derechos reservados</p>
+                    </div>
                 </div>
             </div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="app3.js"></script>
         <script src="app2.js"></script>
     </body>
