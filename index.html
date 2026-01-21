@@ -19,9 +19,9 @@
         <div class="burbuja"></div>
         <div class="burbuja"></div>
         <header>
-            <div class="logo">
+            <a href="index.html" class="logo">
                 Acuario Crystal
-            </div>
+            </a>
             <div class="hamburger">
                 <div class="line"></div>
                 <div class="line"></div>
@@ -32,13 +32,13 @@
                     <li><a href="" class="active ">Inicio</a>
                     </li>
                     <li>
-                        <a href="">Paquetes</a>
+                        <a href="packages.html">Paquetes/Comprar</a>
                     </li>
                     <li>
                         <a href="historia.html">Historia</a>
                     </li>
                     <li>
-                        <a href="contact_us.html" >Contactanos</a>
+                        <a href="contact_us.html" >Contáctanos</a>
                     </li>
                 </ul>
             </nav>
@@ -73,7 +73,8 @@
                         proteger la vida marina.
                     </p>
                     <div class="centrado-flex">
-                        <button class="bottone1"><strong>Comprar entradas</strong></button>
+                        <button onclick="window.location.href='packages.html'" class="bottone1">Comprar entradas</button>
+
                     </div>
                 </div>
                 <div class="celda" id="contenedor-medusas">
@@ -133,7 +134,8 @@
                 </div>
             </div>
             <div class="centrado-flex">
-                <button class="bottone1"><strong>Comprar entradas</strong></button>
+                <button onclick="window.location.href='packages.html'" class="bottone1">Comprar entradas</button>
+
             </div>
             <div class="separador">
                 <h1>¡El favorito de las personas!</h1>
@@ -166,39 +168,40 @@
             </div>
             <div class="separador">
                 <h1>¿Tienes dudas? ¿Comentarios? ¡Envíanoslo!</h1>
-                <button class="bottone1" id="boton-comentario"><strong>Enviar comentarios</strong></button>
+                <button onclick="window.location.href='contact_us.html'" class="bottone1">Enviar Comentarios</button>
             </div>
         </main>
         <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="footer-col">
-                        <h4>Compañía</h4>
+                        <h4>Acuario</h4>
                         <ul>
-                            <li><a href="">Sobre nosotros</a></li>
+                            <li><a href="index.html">Inicio</a></li>
                             <li><a href="">Nuestra historia</a></li>
-                            <li><a href="">Carreras</a></li>
-                            <li><a href="">Prensa</a></li>
                         </ul>
                     </div>
-                    <div class="footer-col">
-                        <h4>Ayuda</h4>
-                        <ul>
-                            <li><a href="">Preguntas frecuentes</a></li>
-                            <li><a href="">Soporte</a></li>
-                            <li><a href="">Políticas</a></li>
-                            <li><a href="">Contacto</a></li>
-                        </ul>
-                    </div>
+                    
                     <div class="footer-col">
                         <h4>Tienda en línea</h4>
                         <ul>
-                            <li><a href="">Entradas</a></li>
-                            <li><a href="">Paquetes</a></li>
-                            <li><a href="">Regalos</a></li>
-                            <li><a href="">Merchandising</a></li>
+                            <li><a href="packages.html">Entradas</a></li>
+                            <li><a href="packages.html">Paquetes</a></li>
                         </ul>
                     </div>
+
+                    
+
+                    <div class="footer-col">
+                        <h4>Contactanos</h4>
+                        <ul>
+                            <li><p style="color: #eaf2f8;">+52 771 343 5656</p></li>
+                            <li><p style="color: #eaf2f8;">+52 55 646 6666</p></li>
+                            <li><a href="contact_us.html">Regalanos un comentario</a></li>
+                            
+                        </ul>
+                    </div>
+
                     <div class="footer-col">
                         <h4>Síguenos</h4>
                         <div class="social-links">
@@ -207,6 +210,10 @@
                             <a href=""><i class="fab fa-instagram"></i></a>
                             <a href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <p style="color: #eaf2f8;">©Acuario Crystal <br> Todos los derechos reservados</p>
                     </div>
                 </div>
             </div>
